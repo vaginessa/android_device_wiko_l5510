@@ -1,4 +1,4 @@
-# Copyright (C) 2015 The CyanogenMod Project
+# Copyright (C) 2015 The Mokee OpenSource Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,14 +14,17 @@
 
 $(call inherit-product, device/wiko/l5510/full_l5510.mk)
 
-# Inherit some common CM stuff.
+# Inherit some common MK stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
-# Assert
-TARGET_OTA_ASSERT_DEVICE := l5510,l5320
-
-PRODUCT_NAME := cm_l5510
-BOARD_VENDOR := wiko
 PRODUCT_DEVICE := l5510
+PRODUCT_NAME := cm_l5510
+PRODUCT_BRAND := WIKO
+PRODUCT_MODEL := RIDGE 4G
+PRODUCT_MANUFACTURER := WIKO
 
 PRODUCT_GMS_CLIENTID_BASE := android-wiko
+
+TARGET_VENDOR_PRODUCT_NAME := cm_l5510
+TARGET_VENDOR_DEVICE_NAME := l5510
+PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=L5510 PRODUCT_NAME=cm_l5510

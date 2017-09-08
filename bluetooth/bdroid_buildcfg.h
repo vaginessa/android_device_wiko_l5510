@@ -1,6 +1,5 @@
-
 /*
- * Copyright (C) 2015 The CyanogenMod Project <http://www.cyanogenmod.org>
+ * Copyright (C) 2015 The Mokee OpenSource Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -27,5 +26,5 @@
 // skips conn update at conn completion
 #define BTA_BLE_SKIP_CONN_UPD  FALSE
 #define BLE_VND_INCLUDED   TRUE
-#define BLE_PERIPHERAL_ADV_NAME  FALSE
+#define BLE_PERIPHERAL_ADV_NAME  TRUE
 #endif

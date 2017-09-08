@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2015 The CyanogenMod Project
+# Copyright (C) 2015 The Mokee OpenSource Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,6 +15,9 @@
 #
 
 # Inherit from those products. Most specific first.
+ifneq ($(l5510_32_BIT),true)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+endif
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from l5510 device
@@ -23,6 +26,6 @@ $(call inherit-product, device/wiko/l5510/device.mk)
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := l5510
 PRODUCT_NAME := full_l5510
-PRODUCT_BRAND := WIKO
-PRODUCT_MODEL := RIDGE 4G
+PRODUCT_BRAND := Wiko
+PRODUCT_MODEL := WIKO RIDGE 4G
 PRODUCT_MANUFACTURER := WIKO
